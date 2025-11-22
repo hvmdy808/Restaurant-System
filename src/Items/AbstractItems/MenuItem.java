@@ -1,6 +1,7 @@
 package Items.AbstractItems;
 
 public interface MenuItem {
-    public String getName();
-    public double getPrice();
+    String getName();
+    double getPrice();
+    void prepare();
 }

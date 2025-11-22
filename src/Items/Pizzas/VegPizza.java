@@ -12,6 +12,5 @@ public class VegPizza extends Pizza {
     @Override
     public  String getName(){
         return "Vegetarian Pizza";
-
     }
 }

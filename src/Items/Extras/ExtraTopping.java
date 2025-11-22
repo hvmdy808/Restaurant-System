@@ -5,7 +5,6 @@ import Items.AbstractItems.MenuItem;
 
 public class ExtraTopping extends AddOnsDecorator {
     String topping="Onion and ketchup";
-
     public ExtraTopping(MenuItem item) {
         super(item);
     }

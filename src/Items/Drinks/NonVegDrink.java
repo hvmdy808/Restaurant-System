@@ -5,12 +5,12 @@ import Items.AbstractItems.Drink;
 public class NonVegDrink extends Drink {
 
     @Override
-    public  double getPrice(){
+    public double getPrice(){
         return 70;
     }
-    @Override
-    public  String getName(){
-        return "Drink";
 
+    @Override
+    public String getName(){
+        return "Non-Vegan Drink";
     }
 }

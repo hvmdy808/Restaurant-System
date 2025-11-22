@@ -9,4 +9,11 @@ public abstract class AddOnsDecorator implements MenuItem{
     public abstract double getPrice();
     @Override
     public abstract String getName();
+    @Override
+    public void prepare(){
+        System.out.println("Preparing " + this.getName());
+    }
+    public MenuItem getWrappedItem(){
+        return item;
+    }
 }
