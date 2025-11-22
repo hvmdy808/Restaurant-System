@@ -5,7 +5,7 @@ import Items.AbstractItems.MenuItem;
 
 public class ExtraTopping extends AddOnsDecorator {
     private MenuItem item;
-    String topping;
+    String topping="Onion and ketchup";
 
     @Override
     public  double getPrice(){
