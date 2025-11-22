@@ -5,4 +5,7 @@ public class Cash implements PaymentStrategy{
     public void pay() {
         System.out.println("You are paying Cash");
     }
+    public String getType(){
+        return "Cash";
+    }
 }

@@ -12,6 +12,5 @@ public class NonVegPizza extends Pizza {
     @Override
     public  String getName(){
         return "Meat Pizza";
-
     }
 }

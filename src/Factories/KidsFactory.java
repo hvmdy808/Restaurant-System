@@ -10,18 +10,18 @@ import Items.Pizzas.KidsPizza;
 public class KidsFactory implements MenuFactory{
 @Override
     public Pizza createPizza(){
-return new KidsPizza();
-}
+        return new KidsPizza();
+    }
 
     @Override
     public Burger createBurger(){
-return new KidsBurger();
+        return new KidsBurger();
     }
 
 
     @Override
     public Drink createDrink(){
-return new KidsDrink();
+        return new KidsDrink();
     }
 
 }

@@ -4,8 +4,9 @@ import Items.AbstractItems.AddOnsDecorator;
 import Items.AbstractItems.MenuItem;
 
 public class ExtraSauce extends AddOnsDecorator {
-    private MenuItem item;
-
+    public ExtraSauce(MenuItem item) {
+        super(item);
+    }
     @Override
     public  double getPrice(){
         return item.getPrice()+5;

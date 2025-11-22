@@ -11,19 +11,17 @@ public class VegFactory implements MenuFactory{
 
     @Override
     public Pizza createPizza(){
-
         return new VegPizza();
-
     }
 
     @Override
     public Burger createBurger(){
-return new VegBurger();
+        return new VegBurger();
     }
 
 
     @Override
     public Drink createDrink(){
-return new VegDrink();
+        return new VegDrink();
     }
 }

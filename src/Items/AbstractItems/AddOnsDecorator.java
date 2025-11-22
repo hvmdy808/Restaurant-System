@@ -1,7 +1,10 @@
 package Items.AbstractItems;
 
 public abstract class AddOnsDecorator implements MenuItem{
-    private MenuItem item;
+    protected MenuItem item;
+    public AddOnsDecorator(MenuItem item){
+        this.item = item;
+    }
     @Override
     public abstract double getPrice();
     @Override

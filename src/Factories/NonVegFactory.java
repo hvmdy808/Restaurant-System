@@ -9,22 +9,18 @@ import Items.Pizzas.NonVegPizza;
 
 public class NonVegFactory implements MenuFactory{
 
-
     @Override
     public Pizza createPizza(){
- return new NonVegPizza();
+        return new NonVegPizza();
     }
 
     @Override
     public Burger createBurger(){
         return new NonVegBurger();
-
     }
-
 
     @Override
     public Drink createDrink(){
         return new NonVegDrink();
-
     }
 }

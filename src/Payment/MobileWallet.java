@@ -5,4 +5,8 @@ public class MobileWallet implements PaymentStrategy{
     public void pay() {
         System.out.println("You are paying via mobile wallet");
     }
+    @Override
+    public String getType(){
+        return "Mobile wallet";
+    }
 }

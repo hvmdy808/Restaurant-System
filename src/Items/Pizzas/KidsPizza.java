@@ -12,6 +12,5 @@ public class KidsPizza extends Pizza {
     @Override
     public  String getName(){
         return "Kids Pizza";
-
     }
 }
