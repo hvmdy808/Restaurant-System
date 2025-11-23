@@ -11,8 +11,6 @@ public class Order {
     private OrderNotifier orderNotifier;
     private Type type;
     private PaymentStrategy paymentStrategy;
-
-
     private Billing billing;
 
     public Order() {
