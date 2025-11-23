@@ -1,6 +1,4 @@
 package RestaurantFacade;
-import Observer.Kitchen;
-import Observer.Waiter;
 import Order.Order;
 
 public class RestaurantFacade {
