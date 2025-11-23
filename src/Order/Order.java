@@ -1,13 +1,9 @@
 package Order;
-// Removed unused imports: Discount.BurgerDiscount, Discount.NoDiscount, Discount.PizzaDiscount
-import Discount.DiscountStrategy; // Maintained for type hinting
-// Removed unused imports: Items.AbstractItems.AddOnsDecorator, Items.AbstractItems.Burger, Items.AbstractItems.Pizza
 import Items.AbstractItems.MenuItem;
 import Observer.Kitchen;
 import Observer.OrderNotifier;
 import Observer.Waiter;
 import Payment.PaymentStrategy;
-import Order.Billing; // Import the new Billing class
 import java.util.ArrayList;
 
 public class Order {
@@ -15,14 +11,14 @@ public class Order {
     private OrderNotifier orderNotifier;
     private Type type;
     private PaymentStrategy paymentStrategy;
-    // Removed private DiscountStrategy discountStrategy;
 
-    private Billing billing; // New Billing object
+
+    private Billing billing;
 
     public Order() {
         menuItems = new ArrayList<>();
         orderNotifier = new OrderNotifier();
-        billing = new Billing(menuItems); // Initialize the Billing with menuItems
+        billing = new Billing(menuItems);
     }
 
     public void setType(Type type) {
@@ -37,11 +33,7 @@ public class Order {
         this.paymentStrategy = paymentStrategy;
     }
 
-    // Retained for compatibility with Main, but now sets strategy in Billing object
-/*    public void setDiscountStrategy(DiscountStrategy discountStrategy){
-        // Delegate setting the discount strategy to the Billing object
-        billing.setDiscountStrategy(discountStrategy);
-    }*/
+
 
     public void prepareItems() {
         for (MenuItem menuItem : menuItems) {
@@ -86,7 +78,6 @@ public class Order {
             System.out.println(menuItem.getName() + ": " + menuItem.getPrice() + " $");
         }
         System.out.println("Total price before discount: " + getTotalOldPrice() + " $");
-        // Calls the new calculateFinalPrice, which delegates to the Billing object
         System.out.println("Total price after discount: " + calculateFinalPrice() + " $");
         System.out.println("Payment method: " + paymentStrategy.getType());
     }
