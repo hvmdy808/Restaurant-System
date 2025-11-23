@@ -1,6 +1,6 @@
 # Restaurant Ordering & Billing System
 
-## Authors  Hamdy Mohamed Hamdy 20230126           , Abdelrahman Mohamed Sayed 20230215
+## Authors:  Hamdy Mohamed Hamdy 20230126           , Abdelrahman Mohamed Sayed 20230215
 
 
 
