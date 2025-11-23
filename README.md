@@ -5,7 +5,7 @@
 
 
 
-### Overview
+### •Overview
 
 *This project allows you to:
 
@@ -17,7 +17,7 @@
 
 
 
-### Process
+### •Process
 *When you select any item the system suggests for you if you want any Extras.
 
 *After select , offers for you if need to buy more items.
@@ -25,7 +25,7 @@
 *When pay system apply discount and you can choose any Payment method(Cash,Credit Card, Mobile wallet).
 
 -----------------------------------------------------------------------------------------------------------------------------
-### Test Cases
+## •Test Cases
 # 1) If make Pizza order make discount 30%
 <img width="1116" height="778" alt="image" src="https://github.com/user-attachments/assets/17f9a3b3-4394-449b-9dfc-e9033ad75a06" />
 <img width="598" height="660" alt="image" src="https://github.com/user-attachments/assets/92186941-1abe-432e-a9b5-28a76026bd60" />
